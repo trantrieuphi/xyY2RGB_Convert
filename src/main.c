@@ -2,19 +2,17 @@
 #include <stdio.h>
 #include "../include/conversions.h"
 
-int main() {
-  float x = 0x52ad;
-  float y = 0x3acb;
-  
-  xyBri_t xyBri;
-  xyBri.x = x/65536;
-  xyBri.y = y/65536;
-  xyBri.bri = 55;
-  RGB_t rgb = xyBriToRgb(xyBri);
+int main() {  
+    xyBri_t xyBri;
+    xyBri.x = 0x69E1;
+    xyBri.y = 0x6F3E;
+    xyBri.bri = 254;
+    RGB_t rgb = xyBriToRgb(xyBri);
 
-  printf("R = %d\n", rgb.R);
-  printf("G = %d\n", rgb.G);
-  printf("B = %d\n", rgb.B);
+    printf("R = %d\n", rgb.R);
+    printf("G = %d\n", rgb.G);
+    printf("B = %d\n", rgb.B);
+  
 
   return 0;
 }

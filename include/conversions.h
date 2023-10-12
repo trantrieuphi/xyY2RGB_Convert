@@ -3,7 +3,7 @@
 typedef struct xyBri {
   float x;
   float y;
-  float bri;
+  uint8_t bri;
 } xyBri_t;
 
 typedef struct RGB {
